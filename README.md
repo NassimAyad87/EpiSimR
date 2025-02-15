@@ -23,6 +23,9 @@ Launch the app using:
 library(EpiSimR)
 run_app()
 ```
+## 🌐 The online version  
+
+📌 **[access the shiny application](https://nassimayad.shinyapps.io/EpiSimR/)**
 
 ## Features
 
