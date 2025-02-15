@@ -1,0 +1,19 @@
+Package: EpiSimR
+Title: A Shiny App to Simulate the Dynamics of Spread of Epidemic and Endemic Diseases
+Version: 1.0
+Authors@R: 
+    person(given = "Nassim", family = "AYAD", email = "nassim.ayad.ph@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "https://orcid.org/0000-0002-1809-0935"))
+Maintainer: Nassim AYAD <nassim.ayad.ph@gmail.com>
+Description: This package provides an interactive Shiny application based on deterministic compartmental mathematical modeling approach for simulating and visualizing the dynamics of spread of epidemic and endemic diseases. This interactive app allows users to select the model, with considering or not the permanent immunity, demographic changes, vaccination strategy, isolation strategy and adjust their related parameters such as basic reproduction number, birth and mortality rates, infectious period, latent period, immunity duration, vaccination coverage and isolation rate parameters. It offers a powerful tool for simulating epidemic and endemic dynamics and the impact of vaccination and isolation strategies to mitigate the spread of the disease. Thanks to shiny package.
+Depends: R (>= 4.1.1), shiny (>= 1.10.0), deSolve (>= 1.40), openxlsx (>= 4.2.8)     
+Imports: dplyr, DT, shinythemes 
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
