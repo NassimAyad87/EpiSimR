@@ -1,7 +1,7 @@
 # EpiSimR
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14876663.svg)](https://doi.org/10.5281/zenodo.14876663)
 
-This is an R package containing a Shiny app for Simulating the dynamics of spread of epidemic and endemic diseases.
+This is an R package containing a Shiny app for simulating the dynamics of spread of epidemic and endemic diseases.
 
 ## Description
 
