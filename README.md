@@ -1,15 +1,15 @@
 # EpiSimR
 [![DOI](https://zenodo.org/badge/933402272.svg)](https://doi.org/10.5281/zenodo.14876656)
 
-This is an R package containing a Shiny app for simulating the dynamics of spread of epidemic and endemic diseases.
+This is a Shiny app for simulating the dynamics of spread of epidemic and endemic diseases.
 
 ## Description
 
-This package provides an interactive Shiny application based on deterministic compartmental mathematical modeling approach for simulating and visualizing the dynamics of spread of epidemic and endemic diseases. This interactive app allows users to select the model, with considering or not the permanent immunity, demographic changes, vaccination strategy, isolation strategy and adjust their related parameters such as basic reproduction number, birth and mortality rates, infectious period, latent period, immunity duration, vaccination coverage and isolation rate parameters. It offers a powerful tool for simulating epidemic and endemic dynamics and the impact of vaccination and isolation strategies to mitigate the spread of the disease. Thanks to shiny package.
+This Shiny app provides an interactive Shiny application based on deterministic compartmental mathematical modeling approach for simulating and visualizing the dynamics of spread of epidemic and endemic diseases. This interactive app allows users to select the model, with considering or not the permanent immunity, demographic changes, vaccination strategy, isolation strategy and adjust their related parameters such as basic reproduction number, birth and mortality rates, infectious period, latent period, immunity duration, vaccination coverage and isolation rate parameters. It offers a powerful tool for simulating epidemic and endemic dynamics and the impact of vaccination and isolation strategies to mitigate the spread of the disease. Thanks to shiny package.
 
 ## Installation
 
-Install the package using:
+Install it using:
 
 ``` r
 devtools::install_github("NassimAyad87/EpiSimR", dependencies = TRUE) 
