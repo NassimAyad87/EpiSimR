@@ -1,6 +1,6 @@
 # EpiSimR
 
-This is an R Shiny app for Simulating the dynamics of epidemic and endemic diseases spread.
+This is an R Shiny app for simulating the dynamics of epidemic and endemic diseases spread.
 
 ## Description
 
