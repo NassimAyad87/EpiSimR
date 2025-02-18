@@ -9,7 +9,7 @@ library(openxlsx)
 
 ui <- fluidPage(
     theme = shinytheme("cerulean"),
-    titlePanel("A Shiny App to Simulate the Dynamics of Spread of Epidemic and Endemic Diseases"),
+    titlePanel("A Shiny App to Simulate the Dynamics of Epidemic and Endemic Diseases Spread"),
     tags$footer(
       style = "
       position: fixed;
@@ -178,7 +178,7 @@ server <- function(input, output) {
     model_function <- if (input$model_type == "SEIR") {
       function(time, state, parameters) {
         with(as.list(c(state, parameters)), {
-          dS <- birth_rate * N - death_rate * S - (r0 * (((1 / l) + death_rate) / (1 / l)) * ((1 / d) + death_rate) * S * I / N) + (1 / m) * R
+          dS <- birth_rate * N - death_rate * S - (r0 * (((1 / l) + death_rate) / (1 / l)) * ((1 / d) + death_rate) * S * I / N) + (1 / m) * R + (1 / m) * V
           dE <- (r0 * (((1 / l) + death_rate) / (1 / l)) * ((1 / d) + death_rate) * S * I / N) - (1 / l) * E - death_rate * E
           dI <- (1 / l) * E - (1 / d) * (1 - u) * I - death_rate * I - (1 / q) * u * I
           dQ <- (1 / q) * u * I - (1 / (d - q)) * Q
@@ -193,7 +193,7 @@ server <- function(input, output) {
     } else {
       function(time, state, parameters) {
         with(as.list(c(state, parameters)), {
-          dS <- birth_rate * N - death_rate * S - (r0 * ((1 / d) + death_rate) * S * I / N) + (1 / m) * R
+          dS <- birth_rate * N - death_rate * S - (r0 * ((1 / d) + death_rate) * S * I / N) + (1 / m) * R + (1 / m) * V
           dI <- (r0 * ((1 / d) + death_rate) * S * I / N) - (1 / d) * (1 - u) * I - death_rate * I - (1 / q) * u * I
           dQ <- (1 / q) * u * I - (1 / (d - q)) * Q
           dR <- (1 / d) * (1 - u) * I - death_rate * R - (1 / m) * R + (1 / (d - q)) * Q
