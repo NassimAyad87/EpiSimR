@@ -35,6 +35,9 @@ To install the package, use:
 ``` r
 # Install from GitHub
 devtools::install_github("NassimAyad87/EpiSimR", dependencies = TRUE)
+
+# Install from CRAN
+install.packages("EpiSimR", dependencies = TRUE)
 ```
 
 ## Usage
@@ -84,3 +87,11 @@ run_app()
 ## License
 
 This package is licensed under the **GPL-3 License**.
+
+## Citation
+To cite this package, use:
+
+``` r
+citation("EpiSimR")
+```
+
