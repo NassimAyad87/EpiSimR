@@ -1,13 +1,18 @@
-#' Launch the Shiny app
+#' Launch the shiny app of the package EpiSimR
 #'
-#' This function Launches the Shiny app included in the package EpiSimR.
+#' @return No return value, called for side effects. This function launches a Shiny application.
+#' @examples
+#' if (interactive()) {
+#'   library(EpiSimR)
+#'   run_app()
+#' }
 #'
 #' @import deSolve
 #' @import shiny
 #' @import dplyr
 #' @import openxlsx
 #' @importFrom graphics matplot legend
-#' @importFrom DT datatable
+#' @importFrom DT datatable renderDT
 #' @importFrom shinythemes shinytheme
 #' @importFrom grDevices dev.off png
 

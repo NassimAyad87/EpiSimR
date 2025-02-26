@@ -1,0 +1,108 @@
+---
+title: "Introduction to 'EpiSimR'"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to 'EpiSimR'}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  eval = FALSE
+)
+```
+
+# Overview
+
+'EpiSimR' is an R package providing an interactive **Shiny** application for simulating the spread of **epidemic and endemic diseases** using **deterministic compartmental mathematical models**. The application allows users to:
+
+-   Select different epidemiological models (**SIR, SEIR**).
+-   Consider key factors such as **immunity, demographic changes, vaccination, and isolation strategies**.
+-   Adjust model parameters dynamically (e.g., **basic reproduction number R₀, infectious period, vaccination coverage**).
+-   Visualize the impact of interventions through **real-time interactive plots**.
+
+This tool is designed for **researchers, public health professionals, and students** who wish to explore the dynamics of infectious diseases and assess intervention strategies.
+
+# Installation
+
+To install and load 'EpiSimR', use:
+
+```{r}
+# Install from CRAN
+install.packages("EpiSimR")
+
+# Load the package
+library(EpiSimR)
+```
+
+# Launching the Application
+
+To start the **interactive Shiny app**, run:
+
+```{r}
+run_app()
+```
+
+# Features
+
+## 1. Model Selection & Customization
+
+-   **SIR vs. SEIR models**: Choose between the classic **Susceptible-Infected-Recovered (SIR)** or **Susceptible-Exposed-Infected-Recovered (SEIR)** model.
+-   **Immunity options**: Decide whether recovered individuals gain **permanent or temporary immunity**.
+-   **Demographic changes**: Option to include **birth and mortality rates** in the model.
+-   **Public health interventions**: Assess the impact of **vaccination and isolation strategies**.
+
+## 2. Adjustable Parameters
+
+-   **Basic reproduction number (R₀)**.
+-   **Birth and mortality rates**.
+-   **Infectious period**.
+-   **Latent period** (for SEIR models).
+-   **Duration of immunity**.
+-   **Vaccination coverage**.
+-   **Isolation rate**.
+
+## 3. Simulation & Visualization
+
+-   **Real-time simulation**: Run simulations dynamically as parameters are adjusted.
+-   **Graphical visualization**: Generate plots showing disease dynamics over time.
+-   **Comparative analysis**: Assess the effectiveness of different control measures.
+
+## 4. User-Friendly Interface
+
+-   **Interactive UI** built with the **Shiny** package.
+-   **Dynamic updates** based on user input.
+-   **Export options** for simulation results.
+
+# Example Use Case
+
+Imagine a scenario where a new infectious disease emerges. Public health officials want to evaluate whether **vaccination or isolation measures** can help control the outbreak. Using **EpiSimR**, they can:
+
+1.  Select an **SEIR model** to account for an incubation period.
+2.  Set an initial **R₀** of 3.0 (high transmission potential).
+3.  Introduce a **vaccination strategy** covering 60% of the population.
+4.  Observe the resulting **reduction in peak infection levels**.
+
+# References
+
+For more details on deterministic compartmental models, see:
+
+-   **Brauer, F. (2008).** *Compartmental Models in Epidemiology*. In: F. Brauer, P. van den Driessche, & J. Wu (Eds.), *Mathematical Epidemiology*. Springer. <doi:10.1007/978-3-540-78911-6_2>.
+-   **Keeling, M. J., & Rohani, P. (2008).** *Modeling Infectious Diseases in Humans and Animals*. Princeton University Press.
+
+------------------------------------------------------------------------
+
+### Citation
+
+If you use 'EpiSimR' in your research, please cite it as follows:
+
+``` r
+citation("EpiSimR")
+```
+
+------------------------------------------------------------------------
+
+This vignette provides an introduction to using 'EpiSimR' for epidemic simulations. For further details, refer to the package documentation and function help pages (e.g., `?run_app`).

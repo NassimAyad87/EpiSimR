@@ -43,7 +43,7 @@ ui <- fluidPage(
         ),
         conditionalPanel(
           condition = "input.model_type == 'SEIR'",
-          sliderInput("l", "Latency period:",
+          sliderInput("l", "Latency period (days):",
                       min = 1, max = 14, value = 5, step = 1)
         ),
         selectInput(
@@ -135,7 +135,7 @@ ui <- fluidPage(
                 class = "btn-primary",
                 style = "margin-bottom: 10px;"
               ),
-              dataTableOutput("table_output")
+              DTOutput("table_output")
           )
         )
       )
@@ -297,7 +297,7 @@ server <- function(input, output) {
   )
 
   # Tidy table of outputs
-  output$table_output <- renderDataTable({
+  output$table_output <- renderDT({
     out <- simulation()
 
     # Determine columns to display based on the selected model type

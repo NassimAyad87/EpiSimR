@@ -1,23 +1,45 @@
 # EpiSimR
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14878356.svg)](https://doi.org/10.5281/zenodo.14878356)
 
-This is an R Shiny app for simulating the dynamics of epidemic and endemic diseases spread.
+## Overview
+
+**EpiSimR** is an R Shiny application designed for simulating the dynamics of epidemic and endemic disease spread. It utilizes deterministic compartmental mathematical models to provide interactive visualizations and insights into disease transmission and control strategies.
 
 ## Description
 
-It provides an interactive shiny application based on deterministic compartmental mathematical modeling approach for simulating and visualizing the dynamics of epidemic and endemic diseases spread. This interactive app allows users to select the model, with considering or not the permanent immunity, demographic changes, vaccination strategy, isolation strategy and adjust their related parameters such as basic reproduction number, birth and mortality rates, infectious period, latent period, immunity duration, vaccination coverage and isolation rate parameters. It offers a powerful tool for simulating epidemic and endemic dynamics and the impact of vaccination and isolation strategies to mitigate the spread of the disease. Thanks to shiny package.
+EpiSimR offers an interactive platform for modeling the spread of infectious diseases. Users can select different epidemiological models, including:
+
+-   **SIR (Susceptible-Infectious-Recovered)**
+-   **SEIR (Susceptible-Exposed-Infectious-Recovered)**
+
+The app allows users to configure various parameters, such as:
+
+-   Inclusion or exclusion of permanent immunity
+-   Consideration of demographic changes
+-   Implementation of vaccination and isolation strategies
+
+Users can adjust key epidemiological parameters, including:
+
+-   **Basic reproduction number (R₀)**
+-   **Birth and mortality rates**
+-   **Infectious and latent periods**
+-   **Immunity duration**
+-   **Vaccination coverage**
+-   **Isolation rate**
+
+By modifying these parameters, users can simulate and visualize disease progression under different conditions and intervention strategies.
 
 ## Installation
 
-Install the package using:
+To install the package, use:
 
 ``` r
-devtools::install_github("NassimAyad87/EpiSimR", dependencies = TRUE) 
+# Install from GitHub
+devtools::install_github("NassimAyad87/EpiSimR", dependencies = TRUE)
 ```
 
 ## Usage
 
-Launch the app using:
+Launch the Shiny application using:
 
 ``` r
 library(EpiSimR)
@@ -26,35 +48,39 @@ run_app()
 
 ## Features
 
-### Model selection & customization:
+### Model Selection & Customization
 
--   Allows users to choose between SIR and SEIR models.
--   Option to include or exclude permanent immunity.
--   Option to consider or ignore demographic changes.
--   Customizable vaccination and isolation strategies.
+-   Choose between **SIR** and **SEIR** models.
+-   Include or exclude permanent immunity.
+-   Consider demographic changes.
+-   Customize vaccination and isolation strategies.
 
-### Parameter adjustments:
+### Parameter Adjustments
 
-users can modify various epidemiological parameters, including: - Basic reproduction number (R₀) - Birth and mortality rates - Infectious period - Latent period (for SEIR model) - Immunity duration - Vaccination coverage - Isolation rate
+-   **Basic reproduction number (R₀)**
+-   **Birth and mortality rates**
+-   **Infectious period**
+-   **Latent period** (for SEIR model)
+-   **Immunity duration**
+-   **Vaccination coverage**
+-   **Isolation rate**
 
-### Simulation & interactive visualization:
+### Simulation & Interactive Visualization
 
--   Interactive simulation of epidemic and endemic dynamics.
--   Real-time visualization of disease spread over time.
--   Graphical output to assess the impact of control strategies (vaccination & isolation).
+-   Real-time simulation of epidemic and endemic dynamics.
+-   Interactive graphical representation of disease spread over time.
+-   Visual assessment of public health intervention impacts (e.g., vaccination, isolation).
 
-### User-friendly interface:
+### User-Friendly Interface
 
--   Built using the Shiny package, offering an intuitive and interactive experience.
+-   Built with **Shiny** for an intuitive and interactive experience.
 -   Dynamic updates based on user inputs.
 
-### Application purpose:
+### Application Purpose
 
--   A powerful educational and analytical tool for understanding epidemiological modeling.
--   Helps explore the effectiveness of public health interventions like vaccination and isolation.
+-   Serves as an educational and analytical tool for understanding epidemiological modeling.
+-   Assists in evaluating the effectiveness of public health interventions.
 
 ## License
 
-This package is licensed under the GPL-3 License.
-
-
+This package is licensed under the **GPL-3 License**.

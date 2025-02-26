@@ -2,10 +2,20 @@
 % Please edit documentation in R/run_app.R
 \name{run_app}
 \alias{run_app}
-\title{Launch the Shiny app}
+\title{Launch the shiny app of the package EpiSimR}
 \usage{
 run_app()
 }
+\value{
+No return value, called for side effects. This function launches a Shiny application.
+}
 \description{
-This function Launches the Shiny app included in the package EpiSimR.
+Launch the shiny app of the package EpiSimR
+}
+\examples{
+if (interactive()) {
+  library(EpiSimR)
+  run_app()
+}
+
 }
