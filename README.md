@@ -1,4 +1,5 @@
 # EpiSimR
+[![CRAN status](https://www.r-pkg.org/badges/version/EpiSimR)](https://CRAN.R-project.org/package=EpiSimR)
 
 ## Overview
 
