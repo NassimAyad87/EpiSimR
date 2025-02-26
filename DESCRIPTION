@@ -13,7 +13,7 @@ Description: The 'EpiSimR' package provides an interactive 'shiny' app based on 
     It allows users to explore various intervention strategies, including vaccination and isolation, 
     by adjusting key epidemiological parameters. The methodology follows the approach described by 
     Brauer (2008) <doi:10.1007/978-3-540-78911-6_2>. Thanks to 'shiny' package.
-DOI: 10.5281/zenodo.14876656
+DOI: 10.32614/CRAN.package.EpiSimR
 Depends: R (>= 4.1.1), shiny (>= 1.10.0), deSolve (>= 1.40), openxlsx (>= 4.2.8)     
 Imports: dplyr, DT, shinythemes 
 License: GPL (>= 3)
