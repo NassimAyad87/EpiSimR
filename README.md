@@ -1,5 +1,6 @@
 # EpiSimR
 [![CRAN status](https://www.r-pkg.org/badges/version/EpiSimR)](https://CRAN.R-project.org/package=EpiSimR)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14933944.svg)](https://doi.org/10.5281/zenodo.14876656)
 
 ## Overview
 
