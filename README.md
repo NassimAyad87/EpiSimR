@@ -55,35 +55,35 @@ run_app()
 
 ## Features
 
-### Model Selection & Customization
+### Model selection & customization
 
 -   Choose between **SIR** and **SEIR** models.
 -   Include or exclude permanent immunity.
 -   Consider demographic changes.
 -   Customize vaccination and isolation strategies.
 
-### Parameter Adjustments
+### Parameter adjustments
 
 -   **Basic reproduction number (R₀)**
 -   **Birth and mortality rates**
 -   **Infectious period**
--   **Latent period** (for SEIR model)
+-   **Latent period (for SEIR model)**
 -   **Immunity duration**
 -   **Vaccination coverage**
 -   **Isolation rate**
 
-### Simulation & Interactive Visualization
+### Simulation & interactive visualization
 
 -   Real-time simulation of epidemic and endemic dynamics.
 -   Interactive graphical representation of disease spread over time.
 -   Visual assessment of public health intervention impacts (e.g., vaccination, isolation).
 
-### User-Friendly Interface
+### User-friendly interface
 
 -   Built with **Shiny** for an intuitive and interactive experience.
 -   Dynamic updates based on user inputs.
 
-### Application Purpose
+### Application purpose
 
 -   Serves as an educational and analytical tool for understanding epidemiological modeling.
 -   Assists in evaluating the effectiveness of public health interventions.
