@@ -1,7 +1,7 @@
 # EpiSimR
 [![CRAN status](https://www.r-pkg.org/badges/version/EpiSimR)](https://CRAN.R-project.org/package=EpiSimR)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14876656.svg)](https://doi.org/10.5281/zenodo.14876656)
-![GitHub all releases](https://img.shields.io/github/downloads/NassimAyad87/EpiSimR/996)
+![GitHub all releases](https://img.shields.io/github/downloads/NassimAyad87/EpiSimR/total)
 
 
 ## Overview
